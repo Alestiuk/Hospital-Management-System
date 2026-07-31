@@ -1,0 +1,34 @@
+/* Styles for Register page - Hospital Management System */
+
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f4f7fb; color: #333; }
+
+.top-bar { background: #2b6cb0; color: #fff; padding: 18px 24px; text-align: center; }
+.top-bar h1 { font-size: 20px; font-weight: 600; }
+
+.auth-container { display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 72px); padding: 24px; }
+.auth-box { background: #fff; width: 100%; max-width: 420px; padding: 28px; border-radius: 8px; box-shadow: 0 6px 20px rgba(43,108,176,0.12); }
+.auth-box h2 { margin-bottom: 8px; font-size: 22px; }
+.auth-box p { margin-bottom: 16px; color: #556; }
+
+.auth-box form { display: flex; flex-direction: column; gap: 12px; }
+.auth-box input[type="text"],
+.auth-box input[type="email"],
+.auth-box input[type="password"] {
+    padding: 12px 14px; border: 1px solid #d7e1ef; border-radius: 6px; font-size: 14px; background: #fbfdff;
+}
+
+.auth-box button[type="submit"] {
+    background: #2b6cb0; color: #fff; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: 600;
+}
+.auth-box button[type="submit"]:hover { background: #235a95; }
+
+.bottom-text { margin-top: 12px; font-size: 13px; color: #556; }
+.bottom-text a { color: #2b6cb0; text-decoration: none; }
+.bottom-text a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+    .auth-box { padding: 20px; border-radius: 0; box-shadow: none; }
+    .top-bar h1 { font-size: 16px; }
+}
